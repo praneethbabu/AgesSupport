@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-heading {
+    font-family: 'Merriweather', serif;
+  }
+
+  .font-body {
+    font-family: Cambria, 'Hoefler Text', Georgia, serif;
+  }
+
+  body {
+    font-family: Cambria, 'Hoefler Text', Georgia, serif;
+  }
+}
