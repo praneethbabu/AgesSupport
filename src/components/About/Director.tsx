@@ -32,10 +32,7 @@ const Director = () => {
             className="text-lg text-gray-700 leading-relaxed text-center"
             style={{ fontFamily: 'Cambria, Georgia, serif' }}
           >
-            Karthik brings a strong commitment to participant care, staff training,
-            and maintaining NDIS quality standards. Under his leadership, Aegis Support
-            continues to uphold the highest levels of safety and service delivery,
-            ensuring that every individual receives the support they need to thrive.
+            Karthik brings a strong commitment to participant care, staff training, and maintaining NDIS quality standards. Under his leadership, Aegis Support continues to uphold the highest levels of safety and service delivery, ensuring that every individual receives the support they need to thrive. He actively promotes innovation, transparent communication, and team excellence to deliver personalised care outcomes that make a real difference in people’s lives.
           </p>
         </div>
       </div>
