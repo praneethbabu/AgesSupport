@@ -1,6 +1,12 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,6 +18,12 @@ const Footer: React.FC = () => {
         {`
           .footer-bg {
             background: #ffffff;
+          }
+
+          .footer-wave {
+            display: block;
+            width: 100%;
+            line-height: 0;
           }
 
           .neu-footer-card {
@@ -50,9 +62,6 @@ const Footer: React.FC = () => {
 
           .neu-icon:hover {
             transform: translateY(-3px);
-            box-shadow:
-              8px 8px 18px rgba(0,0,0,0.18),
-              -8px -8px 18px rgba(255,255,255,1);
           }
 
           .footer-link {
@@ -83,11 +92,32 @@ const Footer: React.FC = () => {
         `}
       </style>
 
-      {/* ================== FOOTER START ================== */}
+      {/* ================== SVG WAVE ================== */}
+      <div className="footer-wave">
+        <svg
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          width="100%"
+          height="120"
+        >
+          <defs>
+            <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#0a74da" />
+              <stop offset="100%" stopColor="#1fae55" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L0,0Z"
+            fill="url(#footerGradient)"
+          />
+        </svg>
+      </div>
+
+      {/* ================== FOOTER ================== */}
       <footer className="footer-bg text-black py-14">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          {/* =========== Brand Info =========== */}
+          {/* Brand */}
           <div className="neu-footer-card">
             <img src="/logo.png" className="h-12 mb-4" />
             <p className="footer-text leading-relaxed">
@@ -103,7 +133,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* =========== Quick Links =========== */}
+          {/* Quick Links */}
           <div className="neu-footer-card">
             <h4 className="text-xl font-semibold mb-4 footer-title">Quick Links</h4>
             <ul className="space-y-2 footer-text">
@@ -117,13 +147,13 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* =========== Contact Section =========== */}
+          {/* Contact */}
           <div className="neu-footer-card">
-            <h4 className="text-xl font-semibold mb-4 footer-title">Contact Information</h4>
+            <h4 className="text-xl font-semibold mb-4 footer-title">
+              Contact Information
+            </h4>
 
             <ul className="space-y-4 footer-text">
-
-              {/* Address */}
               <li className="flex items-center space-x-4">
                 <div className="neu-icon">
                   <MapPin size={20} className="footer-icon" />
@@ -131,7 +161,6 @@ const Footer: React.FC = () => {
                 <span>Unit 4, 16 Kerr Street, Park Avenue, QLD 4701</span>
               </li>
 
-              {/* Phone */}
               <li className="flex items-center space-x-4">
                 <div className="neu-icon">
                   <Phone size={20} className="footer-icon" />
@@ -141,7 +170,6 @@ const Footer: React.FC = () => {
                 </a>
               </li>
 
-              {/* Email */}
               <li className="flex items-center space-x-4">
                 <div className="neu-icon">
                   <Mail size={20} className="footer-icon" />
@@ -151,22 +179,20 @@ const Footer: React.FC = () => {
                 </a>
               </li>
 
-              {/* Working Hours */}
               <li className="flex items-center space-x-4">
                 <div className="neu-icon">
                   <Clock size={20} className="footer-icon" />
                 </div>
                 <span>Mon – Fri: 9:00 AM – 5:00 PM</span>
               </li>
-
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom */}
         <div className="mt-10 pt-6 text-center">
           <p className="footer-text text-sm">
-            &copy; {currentYear} Aegis Support Pty Ltd. All rights reserved.
+            © {currentYear} Aegis Support Pty Ltd. All rights reserved.
           </p>
         </div>
       </footer>

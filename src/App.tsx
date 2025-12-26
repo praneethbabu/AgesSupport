@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ConsultationModal from "./components/ConsultationModal";
-
+import ScrollToTop from "./pages/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -13,6 +13,9 @@ import Career from "./pages/Career";
 import NDIS from "./pages/NDIS";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
+/**
+ * App Root Component
+ */
 function App() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
 
@@ -21,13 +24,16 @@ function App() {
 
   return (
     <Router>
+      {/* 🔹 Scroll to top on every route change */}
+      <ScrollToTop />
+
       <div className="min-h-screen bg-white flex flex-col">
 
-        {/* Header */}
+        {/* Fixed Header */}
         <Header onBookConsultation={openConsultation} />
 
         {/* Main Content */}
-        <main className="pt-16 flex-grow">
+        <main className="flex-grow pt-24">
           <Routes>
             <Route
               path="/"
