@@ -17,8 +17,8 @@ const InfoSection = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "aegis.spt@gmail.com",
-      link: "mailto:aegis.spt@gmail.com",
+      content: "info@aegissupport.com.au",
+      link: "mailto:info@aegissupport.com.au",
     },
     {
       icon: Clock,

@@ -188,7 +188,7 @@ const CTASection = () => {
                   href="mailto:aegis.spt@gmail.com"
                   className="font-semibold text-lg"
                 >
-                  aegis.spt@gmail.com
+                    info@aegissupport.com.au
                 </a>
               </div>
 
