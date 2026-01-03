@@ -188,7 +188,7 @@ const Footer: React.FC = () => {
                   <Mail size={20} className="footer-icon" />
                 </div>
                 <a href="mailto:aegis.spt@gmail.com" className="footer-link">
-                  aegis.spt@gmail.com
+                info@aegissupport.com.au
                 </a>
               </li>
 
