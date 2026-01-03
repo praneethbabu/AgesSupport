@@ -119,35 +119,48 @@ const Footer: React.FC = () => {
 
           {/* Brand */}
           <div className="neu-footer-card">
-            <img src="/logo.png" className="h-12 mb-4" />
+            <img src="/logo.png" alt="Aegis Support Logo" className="h-12 mb-4" />
             <p className="footer-text leading-relaxed">
-              Delivering compassionate, high-quality disability support across Queensland.
+              Delivering compassionate, high-quality disability support services
+              across Queensland with dignity, respect, and care.
             </p>
 
             <div className="flex space-x-4 mt-6">
-              <div className="neu-icon"><FaFacebook className="social-icon" /></div>
-              <div className="neu-icon"><FaInstagram className="social-icon" /></div>
-              <div className="neu-icon"><FaLinkedin className="social-icon" /></div>
-              <div className="neu-icon"><FaWhatsapp className="social-icon" /></div>
-              <div className="neu-icon"><FaYoutube className="social-icon" /></div>
+              <a href="https://facebook.com" target="_blank" className="neu-icon">
+                <FaFacebook className="social-icon" />
+              </a>
+              <a href="https://instagram.com" target="_blank" className="neu-icon">
+                <FaInstagram className="social-icon" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" className="neu-icon">
+                <FaLinkedin className="social-icon" />
+              </a>
+              <a href="https://wa.me/61435767872" target="_blank" className="neu-icon">
+                <FaWhatsapp className="social-icon" />
+              </a>
+              <a href="https://youtube.com" target="_blank" className="neu-icon">
+                <FaYoutube className="social-icon" />
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="neu-footer-card">
-            <h4 className="text-xl font-semibold mb-4 footer-title">Quick Links</h4>
+            <h4 className="text-xl font-semibold mb-4 footer-title">
+              Quick Links
+            </h4>
             <ul className="space-y-2 footer-text">
               <li><Link to="/" className="footer-link">Home</Link></li>
               <li><Link to="/about-us" className="footer-link">About Us</Link></li>
               <li><Link to="/our-services" className="footer-link">Services</Link></li>
               <li><Link to="/contact-us" className="footer-link">Contact</Link></li>
-              <li><Link to="/career" className="footer-link">Career</Link></li>
-              <li><Link to="/ndis-info" className="footer-link">NDIS Info</Link></li>
+              <li><Link to="/career" className="footer-link">Careers</Link></li>
+              <li><Link to="/ndis-info" className="footer-link">NDIS Information</Link></li>
               <li><Link to="/privacypolicy" className="footer-link">Privacy Policy</Link></li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Information */}
           <div className="neu-footer-card">
             <h4 className="text-xl font-semibold mb-4 footer-title">
               Contact Information
@@ -158,15 +171,15 @@ const Footer: React.FC = () => {
                 <div className="neu-icon">
                   <MapPin size={20} className="footer-icon" />
                 </div>
-                <span>Unit 4, 16 Kerr Street, Park Avenue, QLD 4701</span>
+                <span>Rockhampton, QLD 4700, Australia</span>
               </li>
 
               <li className="flex items-center space-x-4">
                 <div className="neu-icon">
                   <Phone size={20} className="footer-icon" />
                 </div>
-                <a href="tel:0435767872" className="footer-link">
-                  04 3576 7872
+                <a href="tel:+61435767872" className="footer-link">
+                  +61 435 767 872
                 </a>
               </li>
 
@@ -183,7 +196,7 @@ const Footer: React.FC = () => {
                 <div className="neu-icon">
                   <Clock size={20} className="footer-icon" />
                 </div>
-                <span>Mon – Fri: 9:00 AM – 5:00 PM</span>
+                <span>Monday – Friday : 9:00 AM – 5:00 PM</span>
               </li>
             </ul>
           </div>

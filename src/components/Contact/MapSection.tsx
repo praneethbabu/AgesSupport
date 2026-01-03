@@ -14,14 +14,14 @@ const MapSection: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="rounded-lg overflow-hidden shadow-lg mb-6">
             <iframe
-              src="https://www.google.com/maps?q=16+Kerr+Street+Park+Avenue+QLD+4701&output=embed"
+              src="https://www.google.com/maps?q=Rockhampton+QLD+4700&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Aegis Support Location - Unit 4, 16 Kerr Street, Park Avenue, QLD 4701"
+              title="Aegis Support Location - Rockhampton QLD"
             ></iframe>
           </div>
 
@@ -29,8 +29,8 @@ const MapSection: React.FC = () => {
             className="text-center text-gray-700"
             style={{ fontFamily: "Cambria, serif" }}
           >
-            <span className="font-semibold text-[#003366]">Address:</span> Unit 4,
-            16 Kerr Street, Park Avenue, QLD 4701
+            <span className="font-semibold text-[#003366]">Address:</span>{" "}
+            Rockhampton, QLD 4700, Australia
           </p>
         </div>
       </div>
